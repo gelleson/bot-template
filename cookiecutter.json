@@ -1,0 +1,10 @@
+{
+    "full_name": "John Doe",
+    "email": "john.doe@example.com",
+    "github_username": "jdoe",
+    "project_name": "Python Bot",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "version": "0.1.0",
+    "license": ["MIT", "BSD", "ISCL", "Apache Software License 2.0", "Not open source"]
+}

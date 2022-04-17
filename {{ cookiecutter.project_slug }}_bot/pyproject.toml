@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_name }}"
+version = "0.1.0"
+description = ""
+authors = ["{{ cookiecutter.github_username }} <{{ cookiecutter.email }}>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^2.19"
+aerich = "^0.6.3"
+aioredis = "^2.0.1"
+aiohttp = "^3.8.1"
+tomlkit = "^0.10.1"
+tortoise-orm = "^0.19.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.aerich]
+tortoise_orm = "{{cookiecutter.project_slug}}.db.config.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
