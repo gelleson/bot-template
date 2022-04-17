@@ -1,6 +1,6 @@
 import sys
 import logging
-from {{ coockiecutter.project_slug }} import settings
+from {{ cookiecutter.project_slug }} import settings
 
 
 def install():
